@@ -265,7 +265,7 @@ class Graph {
 	      
 	    }
 
-//A map to store locations and their connected locations (nodes)
+// Adds a new location to the adjacency list with no connected locations yet
 public void addLocation(String location) {
  adjList.putIfAbsent(location, new ArrayList<>());
 }
@@ -352,4 +352,5 @@ for (String location : adjList.keySet()) {
 
 
 }
+
 
