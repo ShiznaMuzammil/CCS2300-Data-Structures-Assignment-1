@@ -325,7 +325,7 @@ stack.push(start);
 while (!stack.isEmpty()) {
 String currentLocation = stack.pop();
 
-//Checks the printed locations and prints the locations
+// If the current location has not been visited yet, print it and mark as visited
 if (!visited.contains(currentLocation)) {
    System.out.println("Heading to: " + currentLocation);
    visited.add(currentLocation);
@@ -352,5 +352,6 @@ for (String location : adjList.keySet()) {
 
 
 }
+
 
 
